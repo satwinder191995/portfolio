@@ -1,0 +1,370 @@
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    color:  #404040;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  header {
+    padding: 10px 53px 10px 0;
+    background-color: #404040;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 9999;
+  }
+
+  header h1 {
+    display: block;
+    width:200px;
+    background-color: #96d4d4;
+    font-weight: bold;
+    margin: 0;
+    font-size: 32px;
+    color: #404040;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align:center;
+  }
+
+  header .logo {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  header a{
+    color:#96d4d4;
+  }
+
+  header nav {
+    margin: 7px 0;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  header nav ul li a {
+    padding: 2px 5px;
+    margin-left:15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration:none;
+    border-bottom:2px #96d4d4 solid;
+  }
+
+  header nav ul li a:hover {
+    color: #96d4d4;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
+  .subHeading{
+    top: 0;
+    height:300px;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
+  
+  .subHeading .avatar {
+    position:absolute;
+    right:100px;
+    top:140px;
+    background-color: #96d4d4;
+    height:200px;
+    width:200px;
+    text-align:center;
+    padding:5px;
+  }
+  .avatar img{
+    width:120px;
+    height:120px;
+  }
+  .about{
+    display:flex;
+    height:150px;
+    margin:40px 60px 20px 20px;
+  }
+  .left{
+    display:block;
+    width:15%;
+    text-align: right;
+    font-size:30px;
+    margin-top: 21px;
+  }
+  .hidden{
+    display:none;
+  }
+  .gap{
+    display:block;
+    width:3px;
+    height:100%;
+    margin:0 10px;
+    background-color: #404040;
+  }
+  .aboutRight {
+    display:block;
+    margin-top:20px ;
+    flex:1;
+    font-size: 20px;
+  }
+  .workSection{
+    display:block;
+    height:850px;
+    margin:0;
+    padding:0;
+  }
+  .work{
+    display:flex;
+    padding:0;
+    margin:40px 50px 20px 20px;
+    height:100%;
+  }
+
+  .workRight{
+    display:block;
+    margin:0;
+    width:84%;
+    height:100%;
+
+  }
+  .projects{
+    display:flex;
+    flex-wrap:wrap;
+    position:absolute;
+    margin-right:20px;
+    flex:1;
+    justify-content: space-between;
+  }
+
+  .projectFirst{
+    display:block;
+    margin:10px;
+    flex:1 1 100%;
+    height:300px;
+    filter: opacity(0.5);
+  }
+  .projectFirst:hover{
+    filter:none;
+  }
+  .position{
+    display:block;
+    position:absolute;
+    width: 100%;
+  }
+  .projectFirst header{
+    display:block;
+    position:absolute;
+    background-color: #96d4d4;
+    top:200px;
+    z-index:999;
+    width:30%;
+    padding-left:7px;
+  }
+  h3{
+    font-size:1.5vw;
+  }
+  h4{
+    font-weight:200;
+    font-size:1.2vw;
+  }
+  figure{
+    width:100%;
+    height:100%;
+  }
+
+  img{
+    width:100%;
+    height:100%;
+    border:5px #96d4d4 solid;
+    
+  }
+  /* img:hover{
+   filter: none;
+  } */
+  .project{
+    display:block;
+    margin:10px;
+    flex:1 1 45%;
+    height:240px;
+    filter: opacity(0.5);
+  }
+  .project:hover{
+    filter:none;
+  }
+  .project header{
+    display:block;
+    position:absolute;
+    background-color: #96d4d4;
+    top:140px;
+    z-index:999;
+    width:30%;
+    padding-left:7px;
+  }
+ 
+  footer{
+    display:flex;
+    height:80px;
+    margin:40px 60px 30px 20px;
+  }
+  address{
+    display:flex;
+    flex:1;
+    margin:25px 30px 0 10px;
+    font-size: 20px;
+    justify-content: space-between;
+  }
+  address a{
+  text-decoration: none;
+  color:#404040;
+  cursor:pointer;
+  height:30px;
+  border-bottom:3px #404040 solid;
+  }
+
+  @media only screen and (max-width: 800px) {
+    header nav ul li a {
+      font-size:2vw;
+    }
+    .about{
+      height:210px;
+    }
+    .left{
+      font-size:25px;
+    }
+    address{
+      font-size:15px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    header{
+      padding:0;
+      margin:0;
+    }
+    header h1 {
+      flex:1 1 100%;
+    }
+   header nav{
+     flex:1;
+     height:30px;
+     margin-right:5px;
+   }
+   header nav ul {
+     justify-content: space-around;
+   }
+   header nav ul li a {
+    font-size:18px;
+  }
+  /* .subHeading{
+    position:none;
+    width:100%;
+  } */
+  .subHeading h2 {
+   position:static;
+   width:100%;
+  }
+  .about{
+    flex-direction: column;
+    height:auto;
+    text-align:center;
+    margin:30px 20px;
+  }
+  .left.leftHidden{
+    display:none;
+  }
+  .hidden{
+    display:block;
+    text-align: center;
+  }
+  .gap{
+    display:none;
+  
+  }
+  .left{
+    width:100%;
+    text-align:center;
+  }
+  .workSection{
+    height: 1600px;
+    margin:10px;
+    padding:0;
+  }
+  .work{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin:0;
+    padding:0;
+    
+  }
+  .workRight{
+    margin:0;
+    padding:0;
+  }
+
+  .projects{
+    margin:auto;
+    padding:0;
+    flex-direction: column;
+
+  }
+  .projectFirst{
+    width:90%;
+    filter:none;
+    margin:10px auto;
+  }
+  .projectsFirst{
+    display:block;
+    width:96%;
+  }
+  .projectFirst header{
+    position:static;
+    width:90%;
+    height:40px;
+    padding-left:0;
+  }
+  .project{
+    filter:none;
+    width:90%;
+    margin:10px auto;
+  }
+  .project header{
+    position:static;
+    width:90%;
+    height:40px;
+    padding-left:0;
+  }
+  h3{
+    font-size:20px;
+  }
+  h4{
+    font-weight:200;
+    font-size:15px;
+  }
+  footer{
+    margin:20px;
+    padding:0;
+  flex-direction: column;
+  height:auto;
+  
+  }
+  address{
+   
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  address a{
+    border-bottom:none;
+    }
+  }
